@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floristería - Hadiah Unik dan Kreatif</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Price List Styles */
+        .price-list-section {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+        
+        .price-list-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .price-list-title {
+            color: #d23c77;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        
+        .price-list-subtitle {
+            color: #e67e9f;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .price-items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .price-item {
+            background-color: #fff9fb;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .price-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(210, 60, 119, 0.1);
+        }
+        
+        .price-item-name {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .price-item-value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d23c77;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #888;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .price-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .price-items {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-list-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Musik Latar -->
+    <audio id="bgMusic" loop>
+        <source src="mp3.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    
+    <!-- Tombol Musik -->
+    <div class="music-control">
+        <button id="musicToggle"><i class="fas fa-music"></i></button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="sofi.jpg" alt="Floristería de Alambre con Felpa">
+                <h1>Floristería </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="animate-text">Floristería</h2>
+                <p class="animate-text">Hadiah Abadi untuk Cinta yang Tak Pernah Pudar</p>
+                <a href="#products" class="btn animate-btn">Lihat Koleksi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Koleksi Kami</h2>
+            <div class="product-grid">
+                <!-- Produk 1 -->
+              <div class="product-card">
+    <div class="product-image">
+        <img src="tulip pink.jpg" alt="Bunga Tulip Maroon">
+    </div>
+    <h3>Bouqet Bunga Kawat Bulu</h3>
+    <p class="price"><a href="Tulip.html">Buka Lainnya</a></p>
+</div>
+
+                <!-- Produk 2 -->
+                   <div class="product-card">
+                    <div class="product-image">
+                    <img src="satin.jpeg" alt="Bunga Tulip Maroon">
+                    </div>
+                    <h3>Bouqet Pita Satin</h3>
+                    <p class="price"><a href="Pita Satin.html">Buka Lainnya</a></p>
+                    </div>
+
+                <!-- Produk 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                    <img src="uang.jpeg" alt="Bunga Tulip Maroon">
+                    </div>
+                    <h3>Bouqet Uang</h3>
+                    <p class="price"><a href="uang.html">Buka Lainnya</a></p>
+                    </div>
+
+                <!-- Produk 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                    <img src="boneka.jpeg" alt="Bunga Tulip Maroon">
+                    </div>
+                    <h3>Bouqet Boneka</h3>
+                    <p class="price"><a href="boneka.html">Buka Lainnya</a></p>
+                    </div>
+
+                <!-- Produk 5 -->
+               <div class="product-card">
+                    <div class="product-image">
+                    <img src="snack.jpeg" alt="Bunga Tulip Maroon">
+                    </div>
+                    <h3>Bouqet Snack</h3>
+                    <p class="price"><a href="snack.html">Buka Lainnya</a></p>
+                    </div>
+                <!-- Produk 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                    <img src="artificial.jpeg" alt="Bunga Tulip Maroon">
+                    </div>
+                    <h3>Bouqet Artificial</h3>
+                    <p class="price"><a href="Artificial.html">Buka Lainnya</a></p>
+                    </div>
+        </div>
+    </section>
+
+
+    <!-- Tentang Kami Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>Tentang Kami</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Floristería - Keindahan Abadi dalam Setiap Bunga</h3>
+                <p>Floristería adalah destinasi utama untuk menemukan hadiah bunga yang elegan dan abadi. Kami mengkhususkan diri dalam kreasi bunga satin dan kawat lilit berkualitas tinggi yang dirancang dengan ketelitian dan penuh cinta.</p>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <h4>Handmade with Love</h4>
+                        <p>Setiap bunga dibuat secara handmade oleh pengrajin profesional</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h4>Tahan Lama</h4>
+                        <p>Bunga kami tidak akan layu dan tetap indah selamanya</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <h4>Customizable</h4>
+                        <p>Bisa request warna dan ukuran sesuai keinginan</p>
+                    </div>
+                </div>
+                
+                <p>Dengan material premium dan teknik inovatif, kami menciptakan bunga yang tidak hanya indah tetapi juga penuh makna. Perfect untuk berbagai momen spesial seperti anniversary, Valentine, ulang tahun, atau sekedar ungkapan sayang.</p>
+            </div>
+            <div class="about-image">
+                <img src="tulip merah.jpg" alt="Contoh Buket Bunga Satin Floristería" class="floating-cake">
+                <div class="image-caption">
+                    <p>Buket Tulip Satin - Best Seller</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Kontak Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            
+     <!-- Tata Cara Memesan -->
+<div class="order-instructions">
+    <h3>Cara Memesan Bouqet :</h3>
+    <ol>
+        <li>Klik ikon media sosial (WhatsApp / Instagram / TikTok) untuk menghubungi kami</li>
+        <li>Pilih gambar yang ada di koleksi kami dan lakukan pemesanan</li>
+        <li>Diskusikan ukuran, warna, dan preferensi lainnya</li>
+        <li>Tambahkan request khusus seperti bunga,lampu,pita hias,boneka,atau aksesori lainnya</li>
+        <li>Dapatkan penawaran harga dari kami</li>
+        <li>Konfirmasi pemesanan & lakukan pembayaran</li>
+        <li>Proses pembuatan (3-5 hari kerja)</li>
+        <li>Pengiriman atau pickup setelah selesai</li>
+    </ol>
+    <p class="note">*Harga mulai dari Rp 15.000 tergantung ukuran, kerumitan, dan tambahan aksesoris</p>
+</div>
+
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Watumas, Purwanegara, Purwokerto</p>
+                    <p><i class="fas fa-envelope"></i> shofeya12@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0851-2937-7908</p>
+                    
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/sfffiaaaaa_?igsh=MTlvZGtxM2U5NmE2eg==" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/6285129377908?text=Halo%20Admin%20Floristeria%2C%0ASaya%20ingin%20memesan%20bunga%20Tulip%20Maroon%20seharga%20Rp15.000.%0AMohon%20konfirmasi%20ketersediaannya%20ya.%20Terima%20kasih" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.tokopedia.com/nama-toko/nama-produk" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@nama_toko" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-tiktok"></i>
+                        </a>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Toko Bunga Kawat Lilit. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

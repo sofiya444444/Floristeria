@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jasa Buket Uang - Floristería</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f3f3;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1, h2, h3 {
+            color: #d23c77;
+        }
+        h3 {
+            margin: 10px 0 5px;
+            font-size: 16px;
+            color: #666;
+        }
+        .price-list-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto 40px auto;
+        }
+        .price-list-title {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .price-list-subtitle {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .price-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 12px;
+            background-color: #f9f3f3;
+            border-radius: 5px;
+        }
+        .price-item-name {
+            font-weight: bold;
+        }
+        .price-item-value {
+            color: #d23c77;
+        }
+        .note {
+            font-size: 0.8em;
+            color: #888;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Karya Buket Uang dari Floristería</h1>
+            <p>Spesial untuk Momen Berharga Anda</p>
+        </div>
+
+        <div class="product-container">
+            <!-- Buket Uang Mini -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang1.jpeg" alt="Buket Uang">
+                </div>
+                <h3>Rp 60.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang2.jpeg" alt="Buket Uang">
+                </div>
+                <h3>Rp 115.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang3.jpeg" alt="Buket Uang">
+                </div>
+                <h3>Rp 75.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang4.jpeg" alt="Buket Uang">
+                </div>
+                <h3>Rp 85.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang5.jpeg" alt="Buket Uang">
+                </div>
+                <h3>Rp 75.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang6.jpeg" alt="Buket Uang">
+                </div>
+                <h3>Rp 85.000</h3>
+            </div>
+       
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang7.jpeg" alt="Buket Uang Premium">
+                </div>
+                <h3>Rp 60.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang8.jpeg" alt="Buket Uang Premium">
+                </div>
+                <h3>Rp 50.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang9.jpeg" alt="Buket Uang Premium">
+                </div>
+                <h3>Rp 80.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang10.jpeg" alt="Buket Uang Premium">
+                </div>
+                <h3>Rp 65.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang11.jpeg" alt="Buket Uang Premium">
+                </div>
+                <h3>Rp 75.000</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="uang12.jpeg" alt="Buket Uang Premium">
+                </div>
+                <h3>Rp 75.000</h3>
+            </div>
+        </div>
+
+        <!-- Price List -->
+        <div class="price-list-container">
+            <h2 class="price-list-title">Daftar Harga</h2>
+            <h3 class="price-list-subtitle">Paket Buket Uang Sesuai Jumlah Lembar</h3>
+
+            <div class="price-items">
+                <div class="price-item">
+                    <div class="price-item-name">5 lembar uang</div>
+                    <div class="price-item-value">Rp 35.000</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-name">10 lembar uang</div>
+                    <div class="price-item-value">Rp 45.000</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-name">15 lembar uang</div>
+                    <div class="price-item-value">Rp 55.000</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-name">20 lembar uang</div>
+                    <div class="price-item-value">Rp 65.000</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-name">25 lembar uang</div>
+                    <div class="price-item-value">Rp 75.000</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-name">30 lembar uang</div>
+                    <div class="price-item-value">Rp 85.000</div>
+                </div>
+            </div>
+            <p class="note">*Harga belum termasuk uang asli, hanya jasa pembuatan buket</p>
+        </div>
+    </div>
+</body>
+</html>
